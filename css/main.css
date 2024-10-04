@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eebbbb4b;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor de controles */
+.bingo-controls {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas y selectores */
+.bingo-controls label {
+    margin-right: 10px;
+}
+
+.bingo-controls select,
+.bingo-controls input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Botón */
+.bingo-controls button {
+    background-color: #3b989b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bingo-controls button:hover {
+    background-color: #d2a1e1;
+}
+
+/* Estilos de los cartones de bingo */
+.bingo-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Dos columnas */
+    gap: 20px; /* Espacio entre los cartones */
+    overflow: hidden; /* Evita que el contenido desborde */
+}
+
+.bingo-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Ajusta para que ocupe todo el ancho de su contenedor */
+    max-width: 350px; /* Ajusta el ancho máximo para permitir más espacio */
+    height: auto; /* Ajusta automáticamente la altura */
+}
+
+/* Encabezado del cartón */
+.bingo-header {
+    background-color: #e588be; /* Color de fondo */
+    color: rgb(255, 235, 246); /* Color del texto */
+    display: flex;
+    justify-content: space-between; /* Espacio entre las letras */
+    padding: 10px; /* Espacio alrededor */
+}
+
+/* Letras del cartón */
+.bingo-letter {
+    flex: 1; /* Distribución del espacio */
+    text-align: center; /* Centrar texto */
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    border: 2px solid rgb(246, 224, 224); /* Borde blanco alrededor de cada letra */
+    padding: 10px; /* Espacio interno en cada letra */
+    margin: 0 5px; /* Márgenes entre las letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+
+
+
+/* Estilos de las celdas */
+.bingo-card {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    padding: 10px;
+    width: 100%; /* Asegura que la tarjeta ocupe el ancho completo */
+}
+
+/* Cambiar el tamaño de las letras del encabezado */
+.bingo-letter {
+    flex: 1;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    min-width: 40px; /* Asegura que haya suficiente espacio */
+}
+
+/* Estilos de las celdas */
+.bingo-cell {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 20px; /* Asegúrate de que hay suficiente espacio */
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer; /* Cambiar cursor para indicar que se puede hacer clic */
+    height: 50px; /* Ajusta la altura de las celdas */
+    min-width: 50px; /* Asegura un ancho mínimo */
+}
+
+
+/* Estilo de la celda "Libre" */
+#free {
+    background-color: #ffeb7c; /* Color dorado para la celda libre */
+}
+.marked {
+    background-color: #4caf96b2; /* Cambia el color de fondo de las celdas marcadas */
+    color: white; /* Cambia el color del texto */
+}
+
+
+
+/* Estilo específico para el botón de limpiar */
+#clear-button {
+    background-color: #C70039; /* Cambia este color por el que prefieras */
+    color: white; /* Color del texto */
+    margin-left: 10px; /* Espacio entre botones, opcional */
+}
+
+#clear-button:hover {
+    background-color: #d1216daa; /* Cambia el color en hover, opcional */
+}

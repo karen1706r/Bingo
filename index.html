@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Juego de Bingo</title>
+</head>
+
+<body>
+
+    <div class="bingo-controls">
+        <label for="letter">Seleccionar Letra:</label>
+        <select id="letter">
+            <option value="B">B</option>
+            <option value="I">I</option>
+            <option value="N">N</option>
+            <option value="G">G</option>
+            <option value="O">O</option>
+        </select>
+
+        <label for="number">Número:</label>
+        <input type="number" id="number" min="1" max="75">
+
+        <button id="mark-button">Marcar</button>
+
+
+        <button id="clear-button">Limpiar Selecciones</button>
+        
+    </div>
+
+    <div class="bingo-board">
+        <div class="bingo-container">
+            <div class="bingo-header">
+                <div class="bingo-letter">B</div>
+                <div class="bingo-letter">I</div>
+                <div class="bingo-letter">N</div>
+                <div class="bingo-letter">G</div>
+                <div class="bingo-letter">O</div>
+            </div>
+
+            <div class="bingo-card">
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell" id="free">★</div> <!-- Casilla central "Libre" -->
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+            </div>
+        </div>
+
+        <div class="bingo-container">
+            <div class="bingo-header">
+                <div class="bingo-letter">B</div>
+                <div class="bingo-letter">I</div>
+                <div class="bingo-letter">N</div>
+                <div class="bingo-letter">G</div>
+                <div class="bingo-letter">O</div>
+            </div>
+
+            <div class="bingo-card">
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell" id="free">★</div> <!-- Casilla central "Libre" -->
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+            </div>
+        </div>
+
+        <div class="bingo-container">
+            <div class="bingo-header">
+                <div class="bingo-letter">B</div>
+                <div class="bingo-letter">I</div>
+                <div class="bingo-letter">N</div>
+                <div class="bingo-letter">G</div>
+                <div class="bingo-letter">O</div>
+            </div>
+
+            <div class="bingo-card">
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell" id="free">★</div> <!-- Casilla central "Libre" -->
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+            </div>
+        </div>
+
+        <div class="bingo-container">
+            <div class="bingo-header">
+                <div class="bingo-letter">B</div>
+                <div class="bingo-letter">I</div>
+                <div class="bingo-letter">N</div>
+                <div class="bingo-letter">G</div>
+                <div class="bingo-letter">O</div>
+            </div>
+
+            <div class="bingo-card">
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell" id="free">★</div> <!-- Casilla central "Libre" -->
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+                <div class="bingo-cell"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
